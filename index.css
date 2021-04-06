@@ -1,0 +1,75 @@
+body{
+    background: #0a527c;
+    margin:0;
+}
+
+.calc-body{
+    width:25%;
+    height:450px;
+    margin: 50px auto;
+    background-color: #fff;
+}
+@media(max-width:900px){
+    .calc-body{ width:50%;}
+   
+}
+.output-screen{
+    height:100px;
+}
+#history{
+    text-align: right;
+    height:15px;
+    margin:0 20px;
+    padding-top:10px;
+    font-size:1rem;
+    color:#919191;
+}
+#result{
+    height:45px;
+    text-align: right;
+    margin:10px 20px;
+    font-size: 1.5rem;
+}
+.buttoons{
+    height:350px;
+}
+.flex-container{
+    display:flex;
+    justify-content: space-around;
+}
+.operator, .number,.empty,.unique{
+     width:15%;
+     height:40px;
+     margin: 10px;
+    border-radius:50%;
+    border-width: 0;
+    font-weight:bold;
+    font-size: 18px;
+}
+.number, .empty{
+    background-color: transparent;
+}
+.number,.operator,.unique{
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+.number:active,.operator:active,.unique:active{
+    font-size:15px;
+}
+.row-1 button:nth-child(4){
+    background-color: #0a527c;
+}
+.row-2 button:nth-child(4){
+    background-color:#eb1d8e;
+}
+.row-3 button:nth-child(4){
+    background-color: #12a5e9;
+}
+.row-4 button:nth-child(4){
+    background-color: #beeb1d;
+}
+.row-5 button:nth-child(4){
+    background-color: #af1baf;
+}
